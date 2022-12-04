@@ -11,6 +11,25 @@
 
 
 value=[10,20,30]
-keys= [ten, tewnty, ththirty]
+keys= ["ten", "twenty", "thirty"]
 
-D={zip(value,keys)}
+#d=dict(zip(value,keys))
+#print(d)
+
+
+#D1= {}
+#for i in range(len(keys)):
+#    D1[keys[i]]=value[i]
+
+#print(D1)
+
+
+D1=dict(thirty=30, forty=40, fifty = 50)
+print("D1= ",D1)
+
+D2={keys[i]: value[i] for i in range(len(keys))}
+print("D2= ",D2)
+D3 = D2.copy()
+D3.update(D1)
+
+print("D3= ",D3)
